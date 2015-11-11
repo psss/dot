@@ -25,11 +25,11 @@ syntax match definition ".* \.\.*\.\. .*"
 highlight definition ctermfg=240
 
 " Shifted
-syntax match shifted4 "^    .*" contains=identifier,commit,links
+syntax match shifted4 "^    .*" contains=identifier,commit,links,tag
 highlight shifted4 ctermfg=240
-syntax match shifted8 "^        .*" contains=identifier,commit,links
+syntax match shifted8 "^        .*" contains=identifier,commit,links,tag
 highlight shifted8 ctermfg=244
-syntax match shifted12 "^            .*" contains=identifier,commit,links
+syntax match shifted12 "^            .*" contains=identifier,commit,links,tag
 highlight shifted12 ctermfg=248
 
 " Identifier
