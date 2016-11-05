@@ -1,0 +1,29 @@
+[user]
+    name = Petr Šplíchal
+    email = psssssss@gmail.com
+
+[alias]
+    graph = log --graph --oneline --decorate --all
+
+[apply]
+    whitespace = strip
+
+[status]
+    color = auto
+
+[pager]
+    color = true 
+
+[diff]
+    color = auto
+    rename = copy 
+    tool = meld
+
+[difftool]
+    prompt = false
+
+[push]
+    default = simple
+
+[core]
+    excludesfile = /home/psss/.gitignore
