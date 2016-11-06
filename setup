@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # Bash
-ln -snf git/dots/bashrc ~/.bashrc
+ln -snf git/dots/bash/bashrc ~/.bashrc
 
 # Python
-ln -snf git/dots/pythonrc ~/.pythonrc.py
+ln -snf git/dots/python/pythonrc ~/.pythonrc.py
 
 # Git
-ln -snf git/dots/gitconfig ~/.gitconfig
-ln -snf git/dots/gitignore ~/.gitignore
+ln -snf git/dots/git/gitconfig ~/.gitconfig
+ln -snf git/dots/git/gitignore ~/.gitignore
 
 # Vim
 mkdir -p ~/.vim/syntax
