@@ -1,8 +1,11 @@
 #!/bin/bash
 
-DOTS=$HOME/git/dots
+# Bash
+ln -snf git/dots/bashrc ~/.bashrc
 
-ln -snf $DOTS/bashrc $HOME/.bashrc
-ln -snf $DOTS/pythonrc $HOME/.pythonrc.py
-ln -snf $DOTS/gitconfig $HOME/.gitconfig
-ln -snf $DOTS/gitignore $HOME/.gitignore
+# Python
+ln -snf git/dots/pythonrc ~/.pythonrc.py
+
+# Git
+ln -snf git/dots/gitconfig ~/.gitconfig
+ln -snf git/dots/gitignore ~/.gitignore
