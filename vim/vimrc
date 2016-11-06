@@ -1,0 +1,68 @@
+" Basics
+set nocompatible
+set modeline
+set hlsearch
+set ruler
+set laststatus=2
+syntax on
+
+" Autocommands
+filetype plugin indent on
+autocmd BufRead *.txt,*.xml,*.xsl,*.html,*.rst set tw=66
+autocmd FileType python,sh match ErrorMsg '\%>79v.\+'
+autocmd FileType python,sh set tw=79
+autocmd FileType make set noexpandtab
+
+" Editing
+set nowrap
+set autoindent
+set showmatch
+set nostartofline
+set backspace=2
+
+" Shifting
+set tabstop=4
+set shiftwidth=4
+set shiftround
+set expandtab
+
+" Mapping
+map! <c-j> <end><cr>
+map! <c-l> <esc>
+map! <s-tab> <esc>
+map  <f3> <c-\><c-n>:wa<cr>:!clear;make<cr>
+map  <f4> :1,$s/^/> /gg
+set pastetoggle=<F5>
+map  <f6>  :set tw=66<cr>
+map! <f6>  <esc>:set tw=66<cr>a
+map  <f7>  :set tw=72<cr>
+map! <f7>  <esc>:set tw=72<cr>a
+map  <f8>  :set tw=79<cr>
+map! <f8>  <esc>:set tw=79<cr>a
+map  <f9>  :set tw=0<cr>
+map! <f9>  <esc>:set tw=0<cr>a
+
+" List chars
+set list
+set listchars=trail:‣,tab:\ \ 
+autocmd InsertEnter * set nolist
+autocmd InsertLeave * set list
+highlight specialkey ctermfg=202
+
+" Pathogen
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
+call pathogen#helptags()
+
+" Airline
+let g:airline#extensions#tabline#enabled = 0
+let g:airline_powerline_fonts = 1
+
+" Specfile
+let spec_chglog_format = "%a %b %d %Y Petr Šplíchal <psssssss@gmail.com>"
+
+" Experimental
+set wildmenu
+set showcmd
+set tabpagemax=33
+set tags=./tags;

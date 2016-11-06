@@ -9,3 +9,8 @@ ln -snf git/dots/pythonrc ~/.pythonrc.py
 # Git
 ln -snf git/dots/gitconfig ~/.gitconfig
 ln -snf git/dots/gitignore ~/.gitignore
+
+# Vim
+mkdir -p ~/.vim/syntax
+ln -snf git/dots/vim/vimrc ~/.vimrc
+ln -snf ../../git/dots/vim/text.vim ~/.vim/syntax
