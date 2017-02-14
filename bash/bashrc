@@ -10,6 +10,7 @@ alias d='ls --color -lhgod $*'
 alias L='ls --color -lhgoa $*'
 alias D='ls --color -lhgoda $*'
 alias u='du -sk * .[!.]* 2>/dev/null | sort -n'
+alias g='glances --theme-white'
 
 # Editor
 export EDITOR=vim
