@@ -12,11 +12,11 @@
     color = auto
 
 [pager]
-    color = true 
+    color = true
 
 [diff]
     color = auto
-    rename = copy 
+    rename = copy
     tool = meld
 
 [difftool]
