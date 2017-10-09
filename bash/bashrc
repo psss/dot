@@ -17,7 +17,11 @@ export EDITOR=vim
 set -o vi
 
 # Git
-source /usr/lib/git-core/git-sh-prompt
+files="/usr/lib/git-core/git-sh-prompt
+    /usr/share/git-core/contrib/completion/git-prompt.sh"
+for file in $files; do
+    test -f $file && source $file
+done
 export GIT_PS1_SHOWDIRTYSTATE=true
 
 # Prompt
