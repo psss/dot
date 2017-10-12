@@ -1,3 +1,7 @@
+
+# Global
+[ -f /etc/bashrc ] && source /etc/bashrc
+
 # History
 HISTSIZE=10000
 HISTFILESIZE=100000
@@ -26,9 +30,6 @@ export GIT_PS1_SHOWDIRTYSTATE=true
 
 # Prompt
 PS1='\u@\h:\w$(declare -F __git_ps1 &>/dev/null && __git_ps1 " (%s)")> '
-
-# Completion
-source /etc/profile.d/bash_completion.sh
 
 # Umask
 umask 002
