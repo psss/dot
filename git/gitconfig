@@ -1,6 +1,6 @@
 [user]
     name = Petr Šplíchal
-    email = psssssss@gmail.com
+    email = psplicha@redhat.com
 
 [alias]
     graph = log --graph --oneline --decorate --all
