@@ -49,15 +49,6 @@ autocmd InsertEnter * set nolist
 autocmd InsertLeave * set list
 highlight specialkey ctermfg=202
 
-" Pathogen
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
-call pathogen#helptags()
-
-" Airline
-let g:airline#extensions#tabline#enabled = 0
-let g:airline_powerline_fonts = 1
-
 " Specfile
 let spec_chglog_format = "%a %b %d %Y Petr Šplíchal <psssssss@gmail.com>"
 
