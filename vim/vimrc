@@ -6,13 +6,6 @@ set ruler
 set laststatus=2
 syntax on
 
-" Autocommands
-filetype plugin indent on
-autocmd BufRead *.txt,*.xml,*.xsl,*.html,*.rst set tw=66
-autocmd FileType python,sh match ErrorMsg '\%>79v.\+'
-autocmd FileType python,sh set tw=79
-autocmd FileType make set noexpandtab
-
 " Editing
 set nowrap
 set autoindent
@@ -26,12 +19,21 @@ set shiftwidth=4
 set shiftround
 set expandtab
 
+" Autocommands
+filetype plugin indent on
+autocmd BufRead *.txt,*.xml,*.xsl,*.html,*.rst set tw=66
+autocmd BufRead *.yml set tabstop=2 shiftwidth=2
+autocmd FileType python,sh match ErrorMsg '\%>79v.\+'
+autocmd FileType python,sh set tw=79
+autocmd FileType make set noexpandtab
+
 " Mapping
 map! <c-j> <end><cr>
 map! <c-l> <esc>
 map! <s-tab> <esc>
+map  <f2> :set tabstop=2 shiftwidth=2<cr>
 map  <f3> <c-\><c-n>:wa<cr>:!clear;make<cr>
-map  <f4> :1,$s/^/> /gg
+map  <f4> :set tabstop=4 shiftwidth=4<cr>
 set pastetoggle=<F5>
 map  <f6>  :set tw=66<cr>
 map! <f6>  <esc>:set tw=66<cr>a
