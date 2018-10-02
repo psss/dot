@@ -36,10 +36,6 @@ highlight shifted12 ctermfg=248
 syntax match identifier "[A-Z]\+[#-]\d\+\>"
 highlight identifier ctermfg=darkgreen
 
-" Commit
-syntax match commit "\(\* \)\@<=[a-z0-9]\{7,7} "
-highlight commit ctermfg=darkgreen
-
 " Link
 syntax match links "https\?:\S*"
 highlight links ctermfg=darkblue
