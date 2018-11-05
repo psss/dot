@@ -52,7 +52,7 @@ autocmd InsertLeave * set list
 highlight specialkey ctermfg=202
 
 " Specfile
-let spec_chglog_format = "%a %b %d %Y Petr Šplíchal <psssssss@gmail.com>"
+let spec_chglog_format = "%a %b %d %Y Petr Šplíchal <psplicha@redhat.com>"
 
 " Experimental
 set wildmenu
