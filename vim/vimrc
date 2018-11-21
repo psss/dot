@@ -44,6 +44,11 @@ map! <f8>  <esc>:set tw=79<cr>a
 map  <f9>  :set tw=0<cr>
 map! <f9>  <esc>:set tw=0<cr>a
 
+map <s-f6> :match ErrorMsg '\%>66v.\+'<cr>
+map <s-f7> :match ErrorMsg '\%>72v.\+'<cr>
+map <s-f8> :match ErrorMsg '\%>79v.\+'<cr>
+map <s-f9> :match ErrorMsg '\%>120v.\+'<cr>
+
 " List chars
 set list
 set listchars=trail:‣,tab:\ \ 
