@@ -40,3 +40,6 @@ export PYTHONIOENCODING=utf-8:surrogateescape
 
 # GitHub
 source $HOME/.github
+
+# Functions
+source ~/git/dot/bash/functions

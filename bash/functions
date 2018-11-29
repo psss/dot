@@ -1,0 +1,8 @@
+# Useful functions
+
+# Fetch Pagure pull request
+# https://docs.pagure.org/pagure/usage/pull_requests.html
+function pull-request {
+    git fetch origin pull/$1/head:pr$1
+    git checkout pr$1
+}
