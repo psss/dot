@@ -23,6 +23,7 @@ set expandtab
 filetype plugin indent on
 autocmd BufRead *.txt,*.xml,*.xsl,*.html,*.rst set tw=66
 autocmd BufRead *.yml set tabstop=2 shiftwidth=2
+autocmd BufRead *.fmf set syntax=yaml
 autocmd FileType python,sh match ErrorMsg '\%>79v.\+'
 autocmd FileType python,sh set tw=79
 autocmd FileType make set noexpandtab
