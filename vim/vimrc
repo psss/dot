@@ -12,6 +12,7 @@ set autoindent
 set showmatch
 set nostartofline
 set backspace=2
+set scrolloff=0
 
 " Shifting
 set tabstop=4
