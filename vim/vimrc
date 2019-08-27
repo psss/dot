@@ -33,6 +33,7 @@ autocmd FileType make set noexpandtab
 map! <c-j> <end><cr>
 map! <c-l> <esc>
 map! <s-tab> <esc>
+map \d :r!date +\%Y-\%m-\%d<cr>I== <esc>A ==<cr><cr>
 map  <f2> :set tabstop=2 shiftwidth=2<cr>
 map  <f3> <c-\><c-n>:wa<cr>:!clear;make<cr>
 map  <f4> :set tabstop=4 shiftwidth=4<cr>
