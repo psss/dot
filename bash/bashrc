@@ -37,6 +37,7 @@ umask 002
 # Python
 export PYTHONSTARTUP=~/.pythonrc.py
 export PYTHONIOENCODING=utf-8:surrogateescape
+export PYTHONDONTWRITEBYTECODE=1
 
 # GitHub
 source $HOME/.github
