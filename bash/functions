@@ -1,8 +1,9 @@
 # Useful functions
 
-# Fetch Pagure pull request
+# Fetch Pagure or GitHub pull request
 # https://docs.pagure.org/pagure/usage/pull_requests.html
-function pull-request {
-    git fetch origin pull/$1/head:pr$1
-    git checkout pr$1
+function pull {
+    [[ "$2" != "" ]] && branch=$2 || branch=pr$1
+    git fetch origin pull/$1/head:$branch
+    git checkout $branch
 }
