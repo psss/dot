@@ -2,8 +2,13 @@
 
 # Fetch Pagure or GitHub pull request
 # https://docs.pagure.org/pagure/usage/pull_requests.html
+# Usage: pull <pull-request-number> [branch-name]
 function pull {
-    [[ "$2" != "" ]] && branch=$2 || branch=pr$1
+    # Use custom branch name
+    [[ "$2" != "" ]] && branch="$2" || branch="pr$1"
+    # Remove branch if already exists
+    git branch | grep "$branch" && git branch -D "$branch"
+    # Fetch and check out
     git fetch origin pull/$1/head:$branch
     git checkout $branch
 }
