@@ -27,3 +27,6 @@
 
 [core]
     excludesfile = /home/psss/.gitignore
+
+[pull]
+	ff = only

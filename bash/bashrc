@@ -16,9 +16,17 @@ alias D='ls --color -lhgoda $*'
 alias u='du -sk * .[!.]* 2>/dev/null | sort -n'
 alias g='glances --theme-white'
 
+# tmt aliases
+alias reserve='tmt run login --step execute execute finish provision --how container --image fedora'
+alias start='tmt run --verbose --until report execute --how tmt --interactive test --name . provision --how virtual --image fedora'
+alias retest='tmt run --last test --name . discover -f execute -f --how tmt --interactive'
+alias stop='tmt run --last report --verbose finish'
+
 # Editor
 export EDITOR=vim
 set -o vi
+bind -m vi-command 'Control-l: clear-screen'
+bind -m vi-insert 'Control-l: clear-screen'
 
 # Git
 files="/usr/lib/git-core/git-sh-prompt
