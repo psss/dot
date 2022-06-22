@@ -25,8 +25,8 @@ filetype plugin indent on
 autocmd BufRead *.txt,*.xml,*.xsl,*.html,*.rst set tw=66
 autocmd BufRead *.yml set tabstop=2 shiftwidth=2
 autocmd BufRead *.fmf set syntax=yaml
-autocmd FileType python,sh match ErrorMsg '\%>79v.\+'
-autocmd FileType python,sh set tw=79
+autocmd FileType python,sh match ErrorMsg '\%>99v.\+'
+autocmd FileType python,sh set tw=99
 autocmd FileType make set noexpandtab
 
 " Mapping
@@ -42,15 +42,15 @@ map  <f6>  :set tw=66<cr>
 map! <f6>  <esc>:set tw=66<cr>a
 map  <f7>  :set tw=72<cr>
 map! <f7>  <esc>:set tw=72<cr>a
-map  <f8>  :set tw=79<cr>
-map! <f8>  <esc>:set tw=79<cr>a
-map  <f9>  :set tw=0<cr>
-map! <f9>  <esc>:set tw=0<cr>a
+map  <f8>  :set tw=0<cr>
+map! <f8>  <esc>:set tw=0<cr>a
+map  <f9>  :set tw=99<cr>
+map! <f9>  <esc>:set tw=99<cr>a
 
 map <s-f6> :match ErrorMsg '\%>66v.\+'<cr>
 map <s-f7> :match ErrorMsg '\%>72v.\+'<cr>
-map <s-f8> :match ErrorMsg '\%>79v.\+'<cr>
-map <s-f9> :match ErrorMsg '\%>120v.\+'<cr>
+map <s-f8> :match ErrorMsg '\%>888v.\+'<cr>
+map <s-f9> :match ErrorMsg '\%>99v.\+'<cr>
 
 " List chars
 set list
